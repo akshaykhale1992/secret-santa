@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Puzzle 4</title>
+    <script>
+      function proceed() {
+        const answer = document.getElementById("answer");
+        window.location.href = `/${answer.value.toLowerCase()}.html`;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Enter the Answer to proceed to the next puzzle</h1>
+      <h2>
+        Hint: Not the start, Not the end, but I am just 2 days away from the
+        Weekend.
+      </h2>
+      <input id="answer" type="text" placeholder="Input your Answer" />
+      <input
+        type="button"
+        value="Proceed"
+        onclick="proceed()"
+        id="procceedToNext"
+      />
+    </div>
+  </body>
+</html>
